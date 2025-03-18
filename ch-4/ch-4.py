@@ -56,4 +56,12 @@ for number in range(1,21):
 #make a list of 1,000,000
 count = list(range(1,1000001))
 print(count)
+print(min(count))
+print(max(count))
+
+multipleOfThree = list(range(3,31,3))
+print(multipleOfThree)
+
+cubed = [number**3 for number in range(1,11)]
+print(cubed)
 
