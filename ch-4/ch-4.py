@@ -43,3 +43,17 @@ print(squares)
 print(min(squares))
 print(max(squares))
 print(sum(squares))
+
+print("list compreshension:")
+squares = [myvalue **2 for myvalue in range(1,4)]
+print(squares)
+
+#count to 20
+count  = []
+for number in range(1,21):
+    print(number)
+
+#make a list of 1,000,000
+count = list(range(1,1000001))
+print(count)
+
