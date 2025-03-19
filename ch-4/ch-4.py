@@ -65,3 +65,9 @@ print(multipleOfThree)
 cubed = [number**3 for number in range(1,11)]
 print(cubed)
 
+#slicing a list 
+print("slicing a list")
+
+myList = ['a','b','c','d','e']
+print(myList[1:3])
+print(myList[:4])
