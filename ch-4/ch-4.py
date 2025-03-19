@@ -71,3 +71,22 @@ print("slicing a list")
 myList = ['a','b','c','d','e']
 print(myList[1:3])
 print(myList[:4])
+print(myList[2:])
+
+
+#looping through a slice. 
+for item in myList[0:4]:
+    print(item)
+
+#Copy a list
+
+otherList = myList[:]
+otherList.pop(-2)
+otherList.append("Other list appended")
+print(otherList)
+
+
+otherList = myList
+myList.append("3")
+print(myList)
+print(otherList)
