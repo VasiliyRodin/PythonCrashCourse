@@ -90,3 +90,23 @@ otherList = myList
 myList.append("3")
 print(myList)
 print(otherList)
+
+#Tuples are lists you can't change but you can rewrite:
+tupleA = (2,3,4)
+#tupleA[1] = 2
+for item in tupleA:
+    print(item)
+
+tupleA = (4,5,6)
+print(tupleA)
+
+#buffet problem
+
+buffetTuple = ("eggs", "pizza", "pasta", "ice cream", "cookies")
+#buffetTuple[0] = "othereggs"
+for food in buffetTuple:
+    print(food)
+
+buffetTuple = ("cereal", "yogurt", "pasta", "ice cream", "cookies")
+for food in buffetTuple:
+    print(food)
