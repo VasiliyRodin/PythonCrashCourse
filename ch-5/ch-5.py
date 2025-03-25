@@ -28,3 +28,14 @@ else:
 
 if topping not in requested_topping:
     print(topping + " not in list")
+
+age = 13
+admission_age = 0
+
+if age < 4:
+    admission_price = 4
+elif age >= 4 and age < 16:
+    admission_price = 13
+else:
+    admission_price = 19
+print("your age: " + str(age) + " price is: " + str(admission_price))
