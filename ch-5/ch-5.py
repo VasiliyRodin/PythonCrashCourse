@@ -39,3 +39,14 @@ elif age >= 4 and age < 16:
 else:
     admission_price = 19
 print("your age: " + str(age) + " price is: " + str(admission_price))
+
+
+
+print("Try yourself \n")
+alien_color = "red"
+if alien_color == "green":
+    print("you earned 5 points")
+if alien_color == "yello":
+    print("You earned 10 points")
+elif alien_color == "red":
+    print("you earned 13 points")   
