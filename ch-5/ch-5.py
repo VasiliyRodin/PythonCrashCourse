@@ -85,3 +85,16 @@ for new_user in new_users:
         print("Name " + new_user + " is not available")
     else:
         print (new_user + " is available")
+
+
+#Ordinal numbers
+my_numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14]
+for number in my_numbers:
+    if number == 1:
+        print(str(number)+"st")
+    elif number == 2:
+        print(str(number)+"nd")
+    elif number == 3:
+        print(str(number)+"rd")
+    else:
+        print(str(number)+"th")
