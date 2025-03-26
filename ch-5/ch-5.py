@@ -50,3 +50,18 @@ if alien_color == "yello":
     print("You earned 10 points")
 elif alien_color == "red":
     print("you earned 13 points")   
+
+
+
+toppings_list = ["Chicken", "Peppers", "Olives", "Ham"]
+
+for topping in toppings_list:
+    if topping == "Chicken":
+        print("what are you nuts?")
+
+
+#Checking empty list
+
+mylist = []
+if len(mylist) == 0 :
+    print("this thing is empty")
