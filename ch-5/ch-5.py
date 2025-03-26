@@ -65,3 +65,14 @@ for topping in toppings_list:
 mylist = []
 if len(mylist) == 0 :
     print("this thing is empty")
+
+
+user_names = ["admin" , "bob", "sue", "nick", "tom","peggy"]
+if len(user_names) != 0:
+    for user in user_names:
+        if user == "admin":
+            print("Hello admin, would you like to see a status report?")
+        else:
+            print("Hello user: " + user)
+else:
+    print("no user in list")
