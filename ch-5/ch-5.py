@@ -85,4 +85,4 @@ for new_user in new_users:
     if new_user.title() in current_users:
         print("Name " + new_user + " is not available")
     else:
-        print (new_user + " is available") 
+        print (new_user + " is available")
