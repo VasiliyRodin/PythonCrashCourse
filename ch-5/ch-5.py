@@ -76,3 +76,12 @@ if len(user_names) != 0:
             print("Hello user: " + user)
 else:
     print("no user in list")
+
+current_users = ["Bob", "Sue", "Nick", "Tom","Peggy","Rob","Jen"]
+new_users = ["Jim", "PEGGY","Steve","Sally","Tom","SAM"]
+
+for new_user in new_users:
+    if new_user.title() in current_users:
+        print("Name " + new_user + " is not available")
+    else:
+        print (new_user + " is available")
