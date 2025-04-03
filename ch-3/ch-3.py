@@ -23,6 +23,7 @@ friends.remove("bob bobington")
 print(friends)
 
 
+
 guests = ["bobby bob", "susie sue", "fred fredricks", "ricky bobby"]
 removed_guests = guests.pop(0)
 print(removed_guests)
