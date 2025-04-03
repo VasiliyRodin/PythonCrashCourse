@@ -72,9 +72,11 @@ myList = ['a','b','c','d','e']
 print(myList[1:3])
 print(myList[:4])
 print(myList[2:])
+print(myList[0])
+x = "hello"[0]
 
+print("looping through a slice.") 
 
-#looping through a slice. 
 for item in myList[0:4]:
     print(item)
 
