@@ -33,7 +33,23 @@ print(player_example)
 favorite_foods = {
     "bob"       : "pizza",
     "sarah"     : "burgers",
-    "rod"       : "cake"
+    "rod"       : "cake",
     "jim"       : "jello"
 }
 print("Jims favorite food is:" + favorite_foods['jim'])
+
+
+print("Going through a dictionary")
+
+favorite_languages = {'jen': 'python','sarah': 'c','edward': 'ruby','phil': 'python'}
+
+for name in favorite_languages:
+    print(name.title())
+
+#Looping through keys is the same as 
+for name in favorite_languages:
+    print(name.title())
+
+
+for name in favorite_languages:
+    if name == "sarah"
