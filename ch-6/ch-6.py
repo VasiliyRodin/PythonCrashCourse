@@ -75,3 +75,12 @@ for language in sorted(favorite_languages.values()):
     print(language)
 
 
+print("\n Glossary example")
+glossary = {
+            'tuple':"A list thats immuatble",
+            'list':"Pretty much an array a collection of items.",
+            'for': "A kind of loop for each something in another something",
+            'if': "Another kind of loop. If something is or isn't do this"
+            }
+for term in glossary:
+    print(term.title() + " is " + glossary[term])
