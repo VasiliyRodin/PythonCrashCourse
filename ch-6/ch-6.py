@@ -50,6 +50,12 @@ for name in favorite_languages:
 for name in favorite_languages:
     print(name.title())
 
+print('\n')
 
-for name in favorite_languages:
-    if name == "sarah"
+
+favorite_languages = {'jen': 'python','sarah': 'c','edward': 'ruby','phil': 'python'}
+friends_list = ['sarah', 'phil']
+for name in favorite_languages.keys():
+    print(name.title())
+    if name in friends_list: #checks if name is in the list of friends
+        print("Hi " + name.title() + " your favorite language is: " + favorite_languages[name].title())
