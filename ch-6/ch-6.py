@@ -59,3 +59,19 @@ for name in favorite_languages.keys():
     print(name.title())
     if name in friends_list: #checks if name is in the list of friends
         print("Hi " + name.title() + " your favorite language is: " + favorite_languages[name].title())
+    print("\n")
+    if 'edward' not in favorite_languages.keys():
+        print("I correctly got edward")
+
+print("this is for the sorted list")
+for name in sorted(favorite_languages.keys()):
+    print(name)
+    print("Sort the list of keys first them print them")
+
+
+print("\nLooking through all values of a dictionary")
+print("Following languages have been mentioned: \n")
+for language in sorted(favorite_languages.values()):
+    print(language)
+
+
