@@ -84,3 +84,51 @@ glossary = {
             }
 for term in glossary:
     print(term.title() + " is " + glossary[term])
+
+
+
+print("\n Lists of dictionaries Create a list of aliens and fill them up with alien dictionary")
+
+alien = [] #empty list
+#make 30 aliens
+for alien_number in range(30):
+    new_alien = {'color': 'green', 'points':5, 'speed':'slow'}
+    alien.append(new_alien) #adds the alien to the empty list. 
+for aliens in alien[:5]:
+    print(aliens)
+
+print("Total amount of aliens " + str(len(alien)))
+
+
+
+
+#Lists in a dictionary
+print("\n list in dictionary")
+
+pizza = {
+    'crust':'Thick',
+    'toppings': ['pep','ham','pineapple']
+}
+print("Your pizza crust is: " + pizza['crust'] +'\n')
+print("your toppings are:")
+for topping in pizza['toppings']:
+    print(topping)
+
+
+print("\n favorite languages example \n")
+
+favorite_languages = {
+    'judy':['c','c++','java'],
+    'bobby':['java'],
+    'susan':['python','C++']
+}
+
+for name,languages in favorite_languages.items(): # Watch out here, for with two items. 
+    if len(languages) == 1:
+        print("\n"+ name.title() + " Favorite language is: ")
+        for language in languages:
+                print(language.title()) 
+    else:
+        print('\n'+ name.title() + " Favorite languages are: ")
+        for language in languages:
+            print(language.title())
