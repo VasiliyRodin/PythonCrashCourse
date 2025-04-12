@@ -114,4 +114,21 @@ print("your toppings are:")
 for topping in pizza['toppings']:
     print(topping)
 
-    
+
+print("\n favorite languages example \n")
+
+favorite_languages = {
+    'judy':['c','c++','java'],
+    'bobby':['java'],
+    'susan':['python','C++']
+}
+
+for name,languages in favorite_languages.items(): # Watch out here, for with two items. 
+    if len(languages) == 1:
+        print("\n"+ name.title() + " Favorite language is: ")
+        for language in languages:
+                print(language.title()) 
+    else:
+        print('\n'+ name.title() + " Favorite languages are: ")
+        for language in languages:
+            print(language.title())
