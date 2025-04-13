@@ -46,7 +46,7 @@ favorite_languages = {'jen': 'python','sarah': 'c','edward': 'ruby','phil': 'pyt
 for name in favorite_languages:
     print(name.title())
 
-#Looping through keys is the same as 
+#Looping through keys is the same as lists 
 for name in favorite_languages:
     print(name.title())
 
@@ -92,7 +92,7 @@ print("\n Lists of dictionaries Create a list of aliens and fill them up with al
 alien = [] #empty list
 #make 30 aliens
 for alien_number in range(30):
-    new_alien = {'color': 'green', 'points':5, 'speed':'slow'}
+    new_alien = {'color': 'green', 'points':5, 'speed':'slow'}#dictionary gets created here
     alien.append(new_alien) #adds the alien to the empty list. 
 for aliens in alien[:5]:
     print(aliens)
@@ -123,7 +123,8 @@ favorite_languages = {
     'susan':['python','C++']
 }
 
-for name,languages in favorite_languages.items(): # Watch out here, for with two items. 
+
+for name,languages in favorite_languages.items(): # Watch out here, for loop with item keypair. Can call each one. 
     if len(languages) == 1:
         print("\n"+ name.title() + " Favorite language is: ")
         for language in languages:
@@ -132,3 +133,80 @@ for name,languages in favorite_languages.items(): # Watch out here, for with two
         print('\n'+ name.title() + " Favorite languages are: ")
         for language in languages:
             print(language.title())
+
+
+print("\n dictionary in a dictionary \n")
+
+users = {
+    'vrodin': {
+        'first' : 'vasiliy',
+        'last'  : 'rodin',
+        'location' : 'california'
+    },
+    'bob':{
+        'first':'bob',
+        'last':'bobington',
+        'location': 'europe'
+    }
+}
+
+for username, user_info in users.items():
+    user_full_name = user_info['first'] + " " + user_info['last']
+    print('User with username: ' + username + "\n" + "Full name: " + user_full_name.title() + '\n' + user_info['location'].title())
+
+
+
+print('\n\n\n Ch 6 practice: \n\n\n')
+people = []
+person_01 = {
+    'first' :'bob',
+    'last'  :'bobington',
+    'age'   :'34',
+    'city'  :'san jose'
+}
+person_02 = {
+    'first' :'rob',
+    'last'  :'robington',
+    'age'   :'24',
+    'city'  :'Ran Sose'
+}
+person_03 = {
+    'first' :'tob',
+    'last'  :'tobington',
+    'age'   :'54',
+    'city'  :'tan wose'
+}
+people.append(person_01)
+people.append(person_02)
+people.append(person_03)
+for person in people:
+    print("First Name: "+ person['first'].title() + " " + person['last'].title())
+    print("\t Age: " + person['age'])
+    print("\t Lives in city: " + person['city']) 
+
+
+
+cities = {
+    'san francisco':{
+        'state': 'california',
+        'population': 1000000,
+        'weather': 'cold',
+        'country': 'usa'
+    },
+    'miami': {
+        'state': 'florida',
+        'population': 4000000,
+        'weather': 'too hot',
+        'country': 'usa'
+    }
+}
+print("Info on stored cities:")
+for city, city_info in cities.items():
+    print("this city name is: " + city.title())
+    print('\t' + 'State: ' + city_info['state'].title())
+    print('\t' + 'Population: ' + str(city_info['population']))
+    print('\t' + 'Weather' + city_info['weather'])
+    print('\t' + 'Country: ' + city_info['country'])
+
+
+
