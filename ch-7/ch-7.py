@@ -33,3 +33,4 @@ cat_weight = input("Please enter the amount your cat weighs in pounds: ")
 cat_weight = float(cat_weight)
 cat_calories = (cat_weight // 1) * 20 #floor division how many times for every cat pound add 20 calories
 print("your cat should consume " + str(cat_calories) + " calories")
+
