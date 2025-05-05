@@ -4,13 +4,15 @@
 print("Please input the pizza toppings you want. Once complete please type: quit")
 pizzaToppingsList = []
 pizzaTopping = ""
-while True :
+while pizzaTopping.lower() != "quit" :
     pizzaTopping = input("Please add a topping: ")
-    if pizzaTopping == "quit":
-        break
-    print("I will add " + pizzaTopping + " to the list. What else you would like to add?")
-    pizzaToppingsList.append(pizzaTopping)
+    if pizzaTopping.lower() != "quit":
+        print("I will add " + pizzaTopping + " to the list. What else you would like to add?")
+        pizzaToppingsList.append(pizzaTopping)
 
 print("you have ordered the following toppings:")
 for pizzaTopping in pizzaToppingsList:
     print (pizzaTopping)
+
+
+
