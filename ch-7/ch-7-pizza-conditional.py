@@ -14,5 +14,3 @@ print("you have ordered the following toppings:")
 for pizzaTopping in pizzaToppingsList:
     print (pizzaTopping)
 
-
-
