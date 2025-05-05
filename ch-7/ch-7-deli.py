@@ -4,9 +4,8 @@ sandwich_orders = ["Tuna","Ham & Cheese","Turkey Club", "Pastrami","Royal with C
 finished_sandwiches = []
 
 while sandwich_orders:
-    for sandwich in sandwich_orders:
-        print("I made your " + sandwich)
-        finished_sandwiches.append(sandwich)
-        sandwich_orders.remove(sandwich)
+    sandwich = sandwich_orders.pop(0)
+    print("I made your " + sandwich)
+    finished_sandwiches.append(sandwich)
 
 print("List of compelted sandwiches" + str(finished_sandwiches))
