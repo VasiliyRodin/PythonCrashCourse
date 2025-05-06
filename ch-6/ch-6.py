@@ -208,5 +208,3 @@ for city, city_info in cities.items():
     print('\t' + 'Weather' + city_info['weather'])
     print('\t' + 'Country: ' + city_info['country'])
 
-
-
