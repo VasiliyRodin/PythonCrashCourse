@@ -51,7 +51,7 @@ for album in albums_list:
     if album.get("tracks"):
         print("Album tracks" + album.get("tracks"))
     else:
-        print("teNo track count provided")
+        print("No track count provided")
     print("--------")
 
 
