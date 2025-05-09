@@ -22,7 +22,8 @@ def show_magicians(magicians):
     for magician in magicians:
         print(magician)
 
-def make_great(magicians):
+def make_great(magicians): ## MUST Change every entry in the list by index. Just doing for magician in magicians makes a temp copy of magician. 
+                            ##Doesn't change the list that was passed
     for magician in range(len(magicians)):
         magicians[magician] += " The Great"
     return magicians
