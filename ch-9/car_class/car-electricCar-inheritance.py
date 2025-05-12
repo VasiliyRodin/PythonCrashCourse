@@ -6,6 +6,7 @@ if you do this for an attribute, you don’t have to include a parameter for tha
 '''“We can extend the method update_odometer() to do additional work every time the odometer reading is modified.
  Lets add a little logic to make sure no one tries to roll back the odometer reading:”
 '''
+
 #The parameter that changes is odometer. 
 class Car():
     def __init__(self, make, model, year):
@@ -35,8 +36,6 @@ class Car():
         else:
             print("The tank is full")
 
-
-
 ###Adding tesla as a class and it inherits from Car class:
 class ElectricCar(Car):
     def __init__(self, make, model, year):
@@ -50,8 +49,6 @@ class ElectricCar(Car):
     #overrides method of refill_gas_tank from car class.
     def refill_gas_tank(self):
         print("Electric cars don't have gas tanks")
-    
-
 
 my_tesla=ElectricCar("tesla", "model3", 2019)
 print(my_tesla.make, my_tesla.model, str(my_tesla.year), str(my_tesla.odometer))
