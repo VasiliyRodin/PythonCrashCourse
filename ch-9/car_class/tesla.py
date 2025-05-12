@@ -27,6 +27,23 @@ class Car():
         else:
             print("You are reverting odometer")
 
+###Adding tesla as a class and it inherits from Car class:
+class ElectricCar(Car):
+    def __init__(self, make, model, year):
+        ##initializes attributes of the parent
+        super().__init__(make, model, year)
+        self.batteryCapacity = 80
+    
+    #display bat cap
+    def display_battery(self):
+        print("Battery Capacity is ", str(self.batteryCapacity) + " KWh")
+
+
+my_tesla=ElectricCar("tesla", "model3", 2019)
+print(my_tesla.make, my_tesla.model, str(my_tesla.year), str(my_tesla.odometer))
+print(my_tesla.car_description())
+print(my_tesla.display_battery())
+
 new_car = Car("honda", "civic", 2005)   
 #new_car.odometer = 50 Using a method instead to update the odometer
 print(new_car.car_description())
