@@ -1,3 +1,17 @@
+'''“Write a separate Privileges class. The class should have one attribute, privileges, 
+that stores a list of strings as described in Exercise 9-7. 
+Move the show_privileges() method to this class. 
+Make a Privileges instance as an attribute in the Admin class.
+ Create a new instance of Admin and use your method to show its privileges.”
+'''
+class Privilege():
+    def __init__(self,privilege_list =["view","modify","delete"]):
+        self.privileges = privilege_list
+    def show_privileges(self):
+        print("This user has following privileges: ")
+        for privileges in self.privileges:
+            print(privileges)
+
 class User():
     def __init__(self,first_name, last_name, username, email):
         self.first_name = first_name
@@ -25,16 +39,14 @@ class User():
 class Admin(User):
     def __init__(self, first_name, last_name, username, email):
         super().__init__(first_name, last_name, username, email)
-        self.privelages = ["view","modify","delete"]
+        self.privilege = Privilege()
 
-    def show_privelages(self):
-        print("This user has following privelages: ")
-        for privelage in self.privelages:
-            print(privelage)
+        
+
 
 admin_user = Admin("admin first","admin last","admin_username","admin@admin.com")
 admin_user.describe_user()
-admin_user.show_privelages()
+admin_user.privilege.show_privileges()
 print("\n\n\n")
 
 user1 = User("user1first","user2last","user1username", "user1@user1.com")
@@ -50,10 +62,3 @@ print("login attempts: " + str(user1.login_attempts))
 user1.reset_login_attempts()
 print("after reset: " + str(user1.login_attempts))
 
-"""“Add an attribute called login_attempts to your User class from Exercise 9-3 (page 166).
- Write a method called increment_login_attempts() that increments the value of login_attempts by 1. 
- Write another method called reset_login_attempts() that resets the value of login_attempts to 0.
-Make an instance of the User class and call increment_login_attempts() several times. 
-Print the value of login_attempts to make sure it was incremented properly, and then call reset_login_attempts(). 
-Print login_attempts again to make sure it was reset to 0.”
-"""
