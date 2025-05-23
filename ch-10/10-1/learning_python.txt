@@ -1,0 +1,5 @@
+I learned that Python is a powerfull language that can do all sorts of things.
+I learned how different loops work. A FOR loop can go through lists and dictionaries. A WHILE loop continues until a certain condition is met.
+I learned how to gather inputs and store them. I learned how to create and go through lists and dictionaries.
+I learned how Classes work in Python and how I can create other classes that become an instance of the parent. like my_dice = Die()
+I learned how to import different classes into other classes as Modules and that methods are just functions that are associated with an object.
