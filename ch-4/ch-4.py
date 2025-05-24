@@ -53,12 +53,12 @@ count  = []
 for number in range(1,21):
     print(number)
 
-#make a list of 1,000,000
+"""#make a list of 1,000,000
 count = list(range(1,1000001))
 print(count)
 print(min(count))
 print(max(count))
-
+"""
 multipleOfThree = list(range(3,31,3))
 print(multipleOfThree)
 
